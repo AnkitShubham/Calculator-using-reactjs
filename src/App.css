@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Raleway:wght@600&family=Ubuntu:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*:focus {
+    outline: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* font-family: 'Carter One', cursive; */
+    font-family: 'Racing Sans One', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.heading{
+    text-align: center;
+    /* font-family: 'Carter One', cursive; */
+    font-family: 'Racing Sans One', cursive;
 }
 
-.App-link {
-  color: #61dafb;
+.title{
+    margin: 10vh;
+    font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputButtons{
+    margin: 2vh;
+}
+
+.output{
+    height: 40px;
+    width: 248px;
+    font-size: 30px;
+    /* border-radius: 4px; */
+}
+
+.opr{
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    border-radius: 4px;
+}
+
+.button{
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+    margin-top: 4px;
+    font-size: 25px;
+}
+
+input{
+    margin-bottom: 1vh;
+    border: none;
+    /* font-family: 'Carter One', cursive; */
+    font-family: 'Racing Sans One', cursive
+}
+
+.evaluate{
+    background-color: orangered;
+    height: 60px;
+    width: 124px;
+}
+
+.clear{
+    background-color: rgb(200, 0, 255);
+    height: 60px;
+    width: 124px;
+}
+
+#output{
+    text-align: right;
+    border-bottom: 2px solid black;
+}
+
+.row input{
+    background-color: rgb(0, 225, 255);
+}
+
+article{
+    margin-bottom: 5vh;
+}
+
+a{
+    text-decoration: none;
 }

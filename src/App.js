@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ClearScreenButton from "./components/ClearScreenButton";
+import DisplayButtons from "./components/DisplayButtons";
+import EvaluateButton from "./components/EvaluateButton";
 
-function App() {
+function Calculator() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <article>
+      <div className="title">
+        <h1>Calculator</h1>
+      </div>
+      <div className="container">
+        <div className="display">
+          <input type="text" className="output" id="output" />
+        </div>
+        <div className="input-btns">
+          <div className="row">
+            <DisplayButtons value="7" />
+            <DisplayButtons value="8" />
+            <DisplayButtons value="9" />
+            <DisplayButtons value="/" />
+          </div>
+          <div className="row">
+            <DisplayButtons value="4" />
+            <DisplayButtons value="5" />
+            <DisplayButtons value="6" />
+            <DisplayButtons value="*" />
+          </div>
+          <div className="row">
+            <DisplayButtons value="1" />
+            <DisplayButtons value="2" />
+            <DisplayButtons value="3" />
+            <DisplayButtons value="-" />
+          </div>
+          <div className="row">
+            <DisplayButtons value="0" />
+            <DisplayButtons value="00" />
+            <DisplayButtons value="." />
+            <DisplayButtons value="+" />
+          </div>
+          <div className="fncRow">
+            <ClearScreenButton />
+            <EvaluateButton />
+          </div>
+        </div>
+      </div>
+    </article>
   );
 }
 
-export default App;
+export default Calculator;
